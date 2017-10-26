@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 import cz.fi.muni.carshop.CarShopStorage;
 import cz.fi.muni.carshop.entities.Car;
 import cz.fi.muni.carshop.enums.CarTypes;
+import cz.fi.muni.carshop.exceptions.RequestedCarNotFoundException;
 
 public class CarShopStorageServiceImpl implements CarShopStorageService {
 
@@ -33,4 +34,26 @@ public class CarShopStorageServiceImpl implements CarShopStorageService {
 		CarShopStorage.getInstancce().getCars().computeIfAbsent(car.getType(), x -> new ArrayList<>()).add(car);
 	}
 
+    @Override
+    public void sellCar(Car car) throws RequestedCarNotFoundException {
+        
+  
+
+            List<Car> allCars = CarShopStorage.getInstancce().getCars().get(car.getType());
+
+                if(allCars.contains(car)){
+
+                allCars.remove(car);
+
+                }
+
+            else{
+
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+            }
+
 }
+    }
+
+
