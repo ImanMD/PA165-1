@@ -43,23 +43,21 @@ public class CarShopStorageServiceImpl implements CarShopStorageService {
     @Override
     public void sellCar(Car car) throws RequestedCarNotFoundException {
         
-  
 
-            List<Car> allCars = CarShopStorage.getInstancce().getCars().get(car.getType());
-
-                if(allCars.contains(car)){
-
+        
+         List<Car> allCars = CarShopStorage.getInstancce().getCars().get(car.getType());
+            
+             
+            if(allCars.contains(car)){
                 allCars.remove(car);
-
-                }
-
-            else{
-
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-
             }
+            
+            else{
+                   throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+     
+    }
 
-}
     }
 
 
