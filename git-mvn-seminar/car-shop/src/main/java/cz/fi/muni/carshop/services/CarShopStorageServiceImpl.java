@@ -43,7 +43,11 @@ public class CarShopStorageServiceImpl implements CarShopStorageService {
     @Override
     public void sellCar(Car car) throws RequestedCarNotFoundException {
         
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> b392f24a81c310bb83dcdac20ab84316846acf4a
         
          List<Car> allCars = CarShopStorage.getInstancce().getCars().get(car.getType());
             
@@ -58,6 +62,10 @@ public class CarShopStorageServiceImpl implements CarShopStorageService {
      
     }
 
+<<<<<<< HEAD
     }
 
 
+=======
+}
+>>>>>>> b392f24a81c310bb83dcdac20ab84316846acf4a
