@@ -5,7 +5,7 @@
 
 	<groupId>cz.fi.muni</groupId>
 	<artifactId>git-mvn-seminar</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>git-mvn-seminar</name>
@@ -16,14 +16,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<hamcrest.version>1.3</hamcrest.version>
-<<<<<<< HEAD
-
 		<junit.version>4.12</junit.version>
-
-=======
-		<junit.version>4.11</junit.version>
->>>>>>> b392f24a81c310bb83dcdac20ab84316846acf4a
-	</properties>
+        </properties>
 
 	<modules>
 		<module>car-shop</module>
